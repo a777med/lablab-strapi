@@ -1,0 +1,7 @@
+/**
+ * issues-report service
+ */
+
+import { factories } from '@strapi/strapi';
+
+export default factories.createCoreService('api::issues-report.issues-report');

@@ -1,0 +1,56 @@
+{
+  "kind": "collectionType",
+  "collectionName": "issues_reports",
+  "info": {
+    "singularName": "issues-report",
+    "pluralName": "issues-reports",
+    "displayName": "Issues Report",
+    "description": ""
+  },
+  "options": {
+    "draftAndPublish": true
+  },
+  "pluginOptions": {},
+  "attributes": {
+    "title": {
+      "type": "string"
+    },
+    "images": {
+      "type": "media",
+      "multiple": true,
+      "required": false,
+      "allowedTypes": [
+        "images",
+        "files",
+        "videos",
+        "audios"
+      ]
+    },
+    "status": {
+      "type": "enumeration",
+      "enum": [
+        "Active",
+        "Fixing",
+        "Solved"
+      ]
+    },
+    "roomnumber": {
+      "type": "integer"
+    },
+    "resolutiontime": {
+      "type": "integer"
+    },
+    "department": {
+      "type": "enumeration",
+      "enum": [
+        "Housekeeping",
+        "Engineering",
+        "IT",
+        "Fooddepartment"
+      ]
+    },
+    "description": {
+      "type": "text"
+    }
+  }
+}

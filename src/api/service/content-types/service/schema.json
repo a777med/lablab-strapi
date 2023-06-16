@@ -4,7 +4,8 @@
   "info": {
     "singularName": "service",
     "pluralName": "services",
-    "displayName": "Service"
+    "displayName": "Service",
+    "description": ""
   },
   "options": {
     "draftAndPublish": true
@@ -19,6 +20,31 @@
     },
     "price": {
       "type": "decimal"
+    },
+    "roomnumber": {
+      "type": "integer"
+    },
+    "specialnote": {
+      "type": "text"
+    },
+    "boost": {
+      "type": "boolean"
+    },
+    "timedetails": {
+      "type": "datetime"
+    },
+    "pax": {
+      "type": "integer"
+    },
+    "status": {
+      "type": "enumeration",
+      "enum": [
+        "Enquiry Request",
+        "Confirmed"
+      ]
+    },
+    "currency": {
+      "type": "string"
     }
   }
 }
