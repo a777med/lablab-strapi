@@ -1,0 +1,29 @@
+{
+  "kind": "collectionType",
+  "collectionName": "food_order_items",
+  "info": {
+    "singularName": "food-order-item",
+    "pluralName": "food-order-items",
+    "displayName": "food_order_item"
+  },
+  "options": {
+    "draftAndPublish": true
+  },
+  "pluginOptions": {},
+  "attributes": {
+    "quantity": {
+      "type": "integer"
+    },
+    "in_room_dining_food_order": {
+      "type": "relation",
+      "relation": "manyToOne",
+      "target": "api::in-room-dining-food-order.in-room-dining-food-order",
+      "inversedBy": "food_order_items"
+    },
+    "in_room_dining_food_menu": {
+      "type": "relation",
+      "relation": "oneToOne",
+      "target": "api::in-room-dining-food-menu.in-room-dining-food-menu"
+    }
+  }
+}

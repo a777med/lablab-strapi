@@ -1,0 +1,27 @@
+{
+  "kind": "collectionType",
+  "collectionName": "in_room_dining_food_orders",
+  "info": {
+    "singularName": "in-room-dining-food-order",
+    "pluralName": "in-room-dining-food-orders",
+    "displayName": "In Room dining Food Order"
+  },
+  "options": {
+    "draftAndPublish": true
+  },
+  "pluginOptions": {},
+  "attributes": {
+    "special_note": {
+      "type": "string"
+    },
+    "room_number": {
+      "type": "string"
+    },
+    "food_order_items": {
+      "type": "relation",
+      "relation": "oneToMany",
+      "target": "api::food-order-item.food-order-item",
+      "mappedBy": "in_room_dining_food_order"
+    }
+  }
+}
