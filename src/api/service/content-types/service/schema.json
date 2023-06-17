@@ -21,12 +21,6 @@
     "price": {
       "type": "decimal"
     },
-    "roomnumber": {
-      "type": "integer"
-    },
-    "specialnote": {
-      "type": "text"
-    },
     "boost": {
       "type": "boolean"
     },

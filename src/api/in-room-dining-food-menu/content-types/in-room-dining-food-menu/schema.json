@@ -1,0 +1,61 @@
+{
+  "kind": "collectionType",
+  "collectionName": "in_room_dining_food_menus",
+  "info": {
+    "singularName": "in-room-dining-food-menu",
+    "pluralName": "in-room-dining-food-menus",
+    "displayName": "In Room dining Food Menu",
+    "description": ""
+  },
+  "options": {
+    "draftAndPublish": true
+  },
+  "pluginOptions": {},
+  "attributes": {
+    "dishname": {
+      "type": "string"
+    },
+    "ingredients": {
+      "type": "text"
+    },
+    "price": {
+      "type": "integer"
+    },
+    "boost": {
+      "type": "boolean"
+    },
+    "picture": {
+      "type": "media",
+      "multiple": false,
+      "required": false,
+      "allowedTypes": [
+        "images",
+        "files",
+        "videos",
+        "audios"
+      ]
+    },
+    "specialnote": {
+      "type": "text"
+    },
+    "category": {
+      "type": "enumeration",
+      "enum": [
+        "starter",
+        "maindish",
+        "snack",
+        "beverage",
+        "desserts"
+      ]
+    },
+    "currency": {
+      "type": "string"
+    },
+    "availability": {
+      "type": "boolean"
+    },
+    "average_time_in_mins": {
+      "type": "integer"
+    }
+  }
+}

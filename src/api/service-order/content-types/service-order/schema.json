@@ -1,0 +1,32 @@
+{
+  "kind": "collectionType",
+  "collectionName": "service_orders",
+  "info": {
+    "singularName": "service-order",
+    "pluralName": "service-orders",
+    "displayName": "Service Order"
+  },
+  "options": {
+    "draftAndPublish": true
+  },
+  "pluginOptions": {},
+  "attributes": {
+    "room_number": {
+      "type": "string"
+    },
+    "datetime": {
+      "type": "datetime"
+    },
+    "pax": {
+      "type": "integer"
+    },
+    "special_note": {
+      "type": "text"
+    },
+    "service": {
+      "type": "relation",
+      "relation": "oneToOne",
+      "target": "api::service.service"
+    }
+  }
+}
